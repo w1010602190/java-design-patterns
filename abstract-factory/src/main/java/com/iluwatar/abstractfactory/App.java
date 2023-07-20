@@ -60,17 +60,17 @@ public class App implements Runnable {
 
   @Override
   public void run() {
-    log.info("elf kingdom");
+    LOGGER.info("elf kingdom");
     createKingdom(Kingdom.FactoryMaker.KingdomType.ELF);
-    log.info(kingdom.getArmy().getDescription());
-    log.info(kingdom.getCastle().getDescription());
-    log.info(kingdom.getKing().getDescription());
+    LOGGER.info(kingdom.getArmy().getDescription());
+    LOGGER.info(kingdom.getCastle().getDescription());
+    LOGGER.info(kingdom.getKing().getDescription());
 
-    log.info("orc kingdom");
+    LOGGER.info("orc kingdom");
     createKingdom(Kingdom.FactoryMaker.KingdomType.ORC);
-    log.info(kingdom.getArmy().getDescription());
-    log.info(kingdom.getCastle().getDescription());
-    log.info(kingdom.getKing().getDescription());
+    LOGGER.info(kingdom.getArmy().getDescription());
+    LOGGER.info(kingdom.getCastle().getDescription());
+    LOGGER.info(kingdom.getKing().getDescription());
   }
 
   /**

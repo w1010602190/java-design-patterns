@@ -46,7 +46,7 @@ public class App {
    * @param args command line args
    */
   public static void main(String[] args) {
-    LOGGER.info("Constructing parts and car");
+	LOGGER.info("Constructing parts and car");
 
     var wheelProperties = Map.of(
         Property.TYPE.toString(), "wheel",
